@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta charset=""utf-8">
+		<title>Tic Tac Toe App</title>
+	</head>
+	<style>
+		table, tr, td {
+			border: 3px solid white;
+			border-collapse: collapse;
+		}
+		td {
+			width: 20%;
+			position: relative;
+		}
+		td:after {
+			content:'';
+			display: block;
+			margin-top: 100%;
+		}
+		td .content {
+			position: absolute;
+			text-align: center;
+			font-size: xx-large;
+			color: white;
+			padding:40px;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: #E3BDBD;
+		}
+	</style>
+	<body>
+		<div class="grid">
+			<table id="table" style="width:60%"> 
+				<tr id="row0">
+					<td class = "square"><div class="content"></div></td>
+					<td class = "square"><div class="content"></div> </td>
+					<td class = "square"> <div class="content"></div> </td>
+				</tr>
+				<tr id="row1">
+					<td class = "square"><div class="content"></div></td>
+					<td class = "square"><div class="content"></div></td>
+					<td class = "square"><div class="content"></div></td>
+				</tr>
+				<tr id="row2">
+					<td class = "square"><div class="content"></div></td>
+					<td class = "square"><div class="content"></div></td>
+					<td class = "square"><div class="content"></div></td>
+				</tr>
+			</table>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
