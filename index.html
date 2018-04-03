@@ -4,6 +4,21 @@
 		<title>Tic Tac Toe App</title>
 	</head>
 	<style>
+		body {
+			margin: auto;
+			width: 80%;
+			padding: 20px;
+			text-align: center;
+		}
+		button {
+			margin: 15px auto 0px auto;
+			text-align: center;
+			position: relative;
+			display: block;
+		}
+		p {
+
+		}
 		table, tr, td {
 			border: 3px solid white;
 			border-collapse: collapse;
@@ -31,8 +46,10 @@
 		}
 	</style>
 	<body>
+		<h1>Tic Tac Pretty</h1>
+		<p id="winner">Winner: </p>
 		<div class="grid">
-			<table id="table" style="width:60%"> 
+			<table id="table" style="width:60%; margin: auto"> 
 				<tr id="row0">
 					<td class = "square"><div class="content"></div></td>
 					<td class = "square"><div class="content"></div> </td>
@@ -50,6 +67,7 @@
 				</tr>
 			</table>
 		</div>
+		<button type="button" id="button">New Game</button>
 		<script src="app.js"></script>
 	</body>
 </html>
